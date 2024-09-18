@@ -23,6 +23,9 @@
           }
         ],
         "styles": ["apps/website/website/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/shared-styles/src/styles"]
+        },
         "scripts": []
       },
       "configurations": {
