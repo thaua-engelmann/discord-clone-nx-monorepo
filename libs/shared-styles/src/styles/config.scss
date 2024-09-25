@@ -1,0 +1,11 @@
+// We'll be using the "rem" unit entirely on this project with a based-set of 62.5% or 10px. 
+$remBasedValue: 62.5%;
+
+// Apply to the html this $remBasedValue, but keep the default browser font-size, which is 16px or so 1.6rem. If you don't know exactly what is this "rem" unit, it is basically a measurement unit just like px or any other, but the thing is this unit is the one representing the root font-size, the html one. It means that everytime we use the rem unit somewhere in our project, the value of "rem" will always be based on the html font-size. It might be real good when creating consistent and responsive web applications. Imagine you got an element with a width of 20rem. With a html based on 62.5% (10px), this value of 20rem will actually be 200px. But what is this? Why should we use it? Media queries. Instead of applying a media query in each element, in each component every single time to manage the responsiveness, you can simply (sometimes not that simple) create one to the html root element. And it works because every element styled using rem is actually referenced by this "rem" unit controlled by the html now. If you change it in the html, it'll change everywhere else. Well, you'll see it working better later on. 
+html {
+    font-size: $remBasedValue;
+}
+
+body {
+    font-size: 1.6rem;
+}
