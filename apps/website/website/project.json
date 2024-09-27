@@ -20,6 +20,11 @@
           {
             "glob": "**/*",
             "input": "apps/website/website/public"
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/shared-assets/",
+            "output": "shared-assets"
           }
         ],
         "styles": ["apps/website/website/src/styles.scss"],
