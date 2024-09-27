@@ -1,1 +1,9 @@
-<p>navbar works!</p>
+<ul class="navbar d-flex">
+
+    @for (item of navbarItems; track item.id) {
+        <li class="navbar__item">
+            {{item.txt}}
+        </li>
+    }
+    
+</ul>
