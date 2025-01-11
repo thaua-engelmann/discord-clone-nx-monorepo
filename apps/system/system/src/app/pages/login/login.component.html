@@ -13,7 +13,25 @@
                 <div class="login-box__input-group d-flex f-column">
                     <label for="email">
                         E-MAIL
-                        <span>*</span>
+
+                        <!-- E-mail validation messages. -->
+                        <span>
+
+                            @if (!form.controls['email'].touched || (form.controls['email'].touched && form.controls['email'].valid)) {
+                                *
+                            } @else if (form.controls['email'].touched) {
+                                
+                                @if (form.controls['email'].hasError('required')) {
+                                    ∙ Field is required
+                                }
+    
+                                @if (form.controls['email'].hasError('email')) {
+                                    ∙ Field is not valid.
+                                }
+                            }
+
+                        </span>
+
                     </label>
                     <input id="email" type="text" formControlName="email">
 
@@ -21,7 +39,15 @@
                 <div class="login-box__input-group d-flex f-column">
                     <label for="password">
                         PASSWORD
-                        <span>*</span>
+                        <span>
+
+                            @if (!form.controls['password'].touched || (form.controls['password'].touched && form.controls['password'].valid)) {
+                                *
+                            } @else if (form.controls['password'].touched && form.controls['password'].hasError('required')) {
+                                ∙ Field is required.
+                            }
+                            
+                        </span>
                     </label>
 
                     <input id="password" type="password" formControlName="password">
