@@ -1,0 +1,11 @@
+.d-grid {
+    display: grid;
+}
+
+// Template Columns classes.
+$columns: (1, 2, 3, 4);
+@each $c in $columns {
+    .d-col-#{$c} {
+        grid-template-columns: repeat(#{$c}, 1fr);
+    }
+}
