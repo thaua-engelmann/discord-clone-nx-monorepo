@@ -1,7 +1,30 @@
-<div class="register">
+<div class="register d-flex f-all-center">
 
-    <div class="register-box">
-        <h1>Hello, World!</h1>
+    <div class="register-box d-grid">
+        
+        <div class="register-box__form-wrapper d-flex f-column gap-2">
+
+            <div class="register-box__welcome-msg">
+                <h2>Welcome back!</h2>
+                <p>We're so excited to see you again</p>
+            </div>
+
+            <form class="d-flex f-column gap-2">
+                <div class="register-box__input-group d-flex f-column">
+                    <label for="emailPhone">E-MAIL OR PHONE NUMBER</label>
+                    <input id="emailPhone" type="text">
+                </div>
+                <div class="register-box__input-group d-flex f-column">
+                    <label for="password">PASSWORD</label>
+                    <input id="password" type="text">
+                </div>
+            </form>
+        </div>
+
+        <div class="register-box__qrcode">
+            QR_CODE
+        </div>
+
     </div>
 
 </div>

@@ -1,0 +1,29 @@
+.register-box {
+    background-color: #313338;
+    padding: 1.6rem;
+    grid-template-columns: 1.3fr .7fr;
+    gap: 5rem;
+    
+    &__welcome-msg {
+        text-align: center;
+
+        h2 {
+            color: #fff;
+        }
+    
+        p {
+            color: #989da3;
+        }
+    }
+
+    &__input-group {
+        gap: .5rem;
+
+        label {
+            color: #acb1b8;
+            font-size: 1.2rem;
+            font-family: 'gg-sans-bold';
+            font-weight: 700;
+        }
+    }
+}
