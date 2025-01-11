@@ -9,19 +9,28 @@
                 <p>We're so excited to see you again</p>
             </div>
 
-            <form class="d-flex f-column gap-2">
+            <form class="d-flex f-column gap-2" [formGroup]="form">
                 <div class="login-box__input-group d-flex f-column">
-                    <label for="emailPhone">E-MAIL OR PHONE NUMBER</label>
-                    <input id="emailPhone" type="text">
+                    <label for="email">
+                        E-MAIL
+                        <span>*</span>
+                    </label>
+                    <input id="email" type="text" formControlName="email">
+
                 </div>
                 <div class="login-box__input-group d-flex f-column">
-                    <label for="password">PASSWORD</label>
-                    <input id="password" type="text">
+                    <label for="password">
+                        PASSWORD
+                        <span>*</span>
+                    </label>
+
+                    <input id="password" type="password" formControlName="password">
+
                 </div>
 
                 <p class="login-box__forgot-password">Forgot your password?</p>
 
-                <button class="login-box__login-btn">Log In</button>
+                <button class="login-box__login-btn" (click)="handleLogin()">Log In</button>
 
                 <p>Need an account? <span>login</span></p>
             </form>
