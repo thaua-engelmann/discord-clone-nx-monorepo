@@ -17,6 +17,7 @@
         "tsConfig": "apps/system/system/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
+          "apps/system/system/src/assets",
           {
             "glob": "**/*",
             "input": "apps/system/system/public"
