@@ -23,6 +23,9 @@
           }
         ],
         "styles": ["apps/system/system/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs"]
+        },
         "scripts": []
       },
       "configurations": {
