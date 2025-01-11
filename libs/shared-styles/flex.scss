@@ -2,22 +2,32 @@
     display: flex;
 }
 
-// Classes Justify.
-.justify {
+// ! All flex classes must have a "f" prefix to indicate its flex display.
+// Justify.
+.f-justify {
     &-between {
         justify-content: space-between;
     }
 }
 
-// Classes Align.
-.align {
+// Align.
+.f-align {
     &-center {
         align-items: center;
     }
 }
 
+// Columns.
+.f-column {
+    flex-direction: column;
+
+    &-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
 // Others
-.all-center {
+.f-all-center {
     justify-content: center;
     align-items: center;
     height: 100%;
