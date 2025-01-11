@@ -40,6 +40,19 @@
         }
     }
 
+    &__btn {
+        background-color: #5865f2;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+        border-radius: .5rem;
+        transition: .2s;
+
+        &:hover {
+            filter: brightness(.95);
+        }
+    }
+
     &__forgot-password {
         color: #0896db;
     }
@@ -64,6 +77,14 @@
 
         span {
             color: #eaebed;
+        }
+    }
+
+    &__register-txt {
+        color: #a8adb3;
+
+        span {
+            color: #0896db;
         }
     }
 
