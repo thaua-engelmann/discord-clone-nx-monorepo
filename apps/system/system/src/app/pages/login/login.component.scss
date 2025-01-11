@@ -1,9 +1,9 @@
 .login-box {
-    width: 60rem;
+    width: 80rem;
     background-color: #313338;
     box-shadow: 0 0 .4rem #313338;
     border-radius: .5rem;
-    padding: 1.6rem;
+    padding: 3rem;
     grid-template-columns: 1.3fr .7fr;
     gap: 5rem;
     
@@ -41,6 +41,33 @@
     }
 
     &__forgot-password {
+        color: #0896db;
+    }
+
+    &__qrcode {
+        width: 13rem; height: 13rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: .5rem;
+
+        &-txts {
+            text-align: center;
+
+            h2 {
+                color: #eaebed;
+            }
+        }
+    }
+
+    &__scan-txt {
+        color: #a8adb3;
+
+        span {
+            color: #eaebed;
+        }
+    }
+
+    &__passkey {
         color: #0896db;
     }
 }

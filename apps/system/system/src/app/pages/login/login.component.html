@@ -1,6 +1,6 @@
 <div class="login d-flex f-all-center">
 
-    <div class="login-box d-grid">
+    <div class="login-box d-grid f-align-center">
         
         <div class="login-box__form-wrapper d-flex f-column gap-2">
 
@@ -62,8 +62,18 @@
             </form>
         </div>
 
-        <div class="login-box__qrcode">
-            QR_CODE
+        <div class="login-box__qrcode-wrapper d-flex f-column f-align-center gap-3">
+            <div class="login-box__qrcode">
+                <img src="assets/qr_code.png" alt="QR CODE">
+            </div>
+
+            <div class="login-box__qrcode-txts d-flex f-column gap-1">
+                <h2>Log in with QR Code</h2>
+                <p class="login-box__scan-txt">Scan this with the <span>Discord mobile app</span> to log in instantly.</p>
+    
+                <p class="login-box__passkey">Or, sign in with passkey</p>
+            </div>
+
         </div>
 
     </div>
