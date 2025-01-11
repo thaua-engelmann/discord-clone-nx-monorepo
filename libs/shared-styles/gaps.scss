@@ -1,0 +1,11 @@
+$gaps: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+@each $g in $gaps {
+    .gap-#{$g} {
+        gap: #{$g}rem;
+    }
+
+    // This "gap-z-#{$g}" is the way I thought for now to create based-zero gaps, like 0.1, 0.2, 0.3... etc. eg: if you wanna use a gap of 0.5, you can add a class of "gap-z-5".
+    .gap-z-#{$g} {
+        gap: #{$g * 0.1}rem;
+    }
+}
